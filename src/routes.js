@@ -20,6 +20,8 @@ routes.post(
   handle(controllers.SessionController.store)
 )
 
+routes.get('/test', (req, res) => res.send('Hello Mauricio!'))
+
 routes.use(authMiddleware)
 
 /**
